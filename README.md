@@ -1,5 +1,3 @@
-# nodejs
-node
 
 
 Node JS
@@ -38,23 +36,7 @@ Node Global Objects
 	
 Node JS Event Loop
 -----------------------------
-	 _____________         _____________________________
-	|____________|	      |								|
-	|____________|		  |								|
-	|____________|		  |								|
-	|____________|		  |		Async Tasks/Web APIs/	|
-	|____________|		  |            Timers			|
-	|____________|		  |			  Execution       	|
-	|____________|		  |								|
-	|____________|  	  |								|
-	| Call Stack |------->|_____________________________|
-	|____________|  					 |					 
-	|____________|   					 V
-		    /\		 _____________________________________
-			|		|	|	|	|	|			  |	  |	  |		
-			|		|	|	|	|	| Event Queue |   |   | 
-			|_______|	|	|	|	|			  |   |   |
-					|___|___|___|___|_____________|___|___|  
+Call Stack | Async/APIs/Timers Execution | Event Queue
 
 Javscript runtime executes code in single thread, It can execute one statement of code at a time, Code is normally placed on the callstack before being executed, The call stack is the segment of memory that keeps track of the order of functions in which they called, The Event Loop is the process in which browser queues up tasks and executes them one at a time by putting them on call stack.
 
@@ -104,6 +86,8 @@ fs.readFile('NodeJS.txt', function(err, data){
 Open/Read File - Sync Mode
 rs flag is used to	open file for reading in synchronous mode.
 
+
+Some Error Codes of Web API
 
 Success
 	200 OK
